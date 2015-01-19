@@ -1,1 +1,8 @@
+<div class = "col-xs-10 col-xs-offset-1">
 <h1>My Wish is Your Command</h1>
+
+<% @wishes.each do |wish| %>
+	<h2><%= link_to wish.name, wish.url %></h2>
+	<p><%= wish.description %></p>
+	<% end %>
+</div>
