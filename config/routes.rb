@@ -1,6 +1,12 @@
 Mywish::Application.routes.draw do
   devise_for :users
   root 'wishes#index'
+
+  resource :dashboard, :only => [:show]
+
+  namespace :dreamer do
+    resources :wishes, :only => [:new, :create, :show]
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

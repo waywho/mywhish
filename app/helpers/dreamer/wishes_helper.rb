@@ -1,0 +1,2 @@
+module Dreamer::WishesHelper
+end

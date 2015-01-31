@@ -1,0 +1,10 @@
+<br />
+<div class = "booyahbox col-xs-10 col-xs-offset-1">
+	<h1>Add a Wish</h1>
+	<%= simple_form_for @wish, :url=> dreamer_wishes_path do |f| %>
+	<%= f.input :name %>
+	<%= f.input :url %>
+	<%= f.input :description %>
+	<%= f.submit "Add a wish", :class => 'btn btn-success' %>
+	<% end %>
+</div>
