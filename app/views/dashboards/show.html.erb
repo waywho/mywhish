@@ -1,5 +1,8 @@
 <div class = 'col-xs-10 col-xs-offset-1'>
+<h2>Dreamer: <%= current_user.email %></h2>
 
+<h1>Wish Lists</h1>
+<hr />
 <% current_user.wishes.each do |wish| %>
 	<h2><%= link_to wish.name, wish.url %></h2>
 	<p><%= wish.description %></p>

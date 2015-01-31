@@ -1,38 +1,38 @@
-/* Sticky footer styles
--------------------------------------------------- */
-$footer-height: 100px;
 
-html,
+$navbar-height: 60px;
+
+.navbar{
+  border-radius: 0;
+  border-width: 0;
+  border-bottom-width: 2px;
+  border-bottom-color: #D9D9D9;
+  background: transparent;
+  min-height: $navbar-height;
+}
+
 body {
+  background:  url('oranges.jpeg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.overlay {
+  background-color: #000;
   height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
-}
-
-/* Wrapper for page content to push down footer */
-#wrap {
-  min-height: 100%;
-  height: auto;
-  /* Negative indent footer by its height */
-  margin: 0 auto -$footer-height;
-  /* Pad bottom by footer height */
-  padding: 0 0 $footer-height;
-}
-
-/* Set the fixed height of the footer here */
-#footer {
-  height: $footer-height;
-  background-color: rgba(36,32,33,0.9);
-  color: white;
-  font-family: "Helvetica Neue", Helvetica;
-  font-weight: 100;
-  padding: 10px 0px;
-  magin-top: 30px;
-}
-
-#footer a {
-  color: white;
+  width: 100%;
+  top: $navbar-height;
+  left: 0;
+  opacity: 0.3;
+  position: absolute;
+  z-index: -1;
 }
 
 .clr {
   clear: both;
+}
+
+.nav.navbar-nav.navbar-right a {
+  color: white;
 }

@@ -41,10 +41,10 @@ ActiveRecord::Schema.define(version: 20150131005702) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"
-    t.string   "occassion"
+    t.string   "occasion"
   end
 
-  add_index "wishes", ["occassion"], name: "index_wishes_on_occassion", using: :btree
+  add_index "wishes", ["occasion"], name: "index_wishes_on_occasion", using: :btree
   add_index "wishes", ["user_id"], name: "index_wishes_on_user_id", using: :btree
 
 end

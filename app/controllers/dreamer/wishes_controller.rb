@@ -17,6 +17,6 @@ class Dreamer::WishesController < ApplicationController
 	private
 
 	def wish_params
-		params.require(:wish).permit(:name, :url, :description)
+		params.require(:wish).permit(:name, :url, :description, :occasion)
 	end
 end
