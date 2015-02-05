@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150131005702) do
+ActiveRecord::Schema.define(version: 20150205232645) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,5 +46,15 @@ ActiveRecord::Schema.define(version: 20150131005702) do
 
   add_index "wishes", ["occasion"], name: "index_wishes_on_occasion", using: :btree
   add_index "wishes", ["user_id"], name: "index_wishes_on_user_id", using: :btree
+
+  create_table "wishlists", force: true do |t|
+    t.string   "occasion"
+    t.string   "date"
+    t.string   "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "wishlists", ["user_id"], name: "index_wishlists_on_user_id", using: :btree
 
 end

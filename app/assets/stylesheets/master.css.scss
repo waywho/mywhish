@@ -1,7 +1,6 @@
 
 $navbar-height: 70px;
 
-
 .navbar{
   border-radius: 0;
   border-width: 0;
@@ -11,17 +10,38 @@ $navbar-height: 70px;
   min-height: $navbar-height;
 }
 
+.navbar .nav >li > a {
+  color: white;
+}
+
+.navbar .navbar-brand {
+  color: black;
+  font-family: "Helvetica Nueue", Helvetica, sans-serif;
+  font-weight: 600;
+}
+
 body {
-  background:  url('presents2.png') no-repeat center center fixed; 
+  background:  url('gift2.jpg') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  color: white;
 }
 
-h1, h2, {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
-  letter-spacing: -1.5px;
+h1.front {
+  font-family: "eraserregular";
+  color: white;
+}
+
+h1 {
+  font-family: "eraserregular";
+  color: white;
+}
+
+h2 {
+  font-family: "Helvetica Nueue", Helvetica, sans-serif;
+  font-weight: 100;
 }
 
 .overlay {
@@ -39,10 +59,21 @@ h1, h2, {
   clear: both;
 }
 
-.nav.navbar-nav.navbar-right a {
+/*.nav.navbar-nav.navbar-right a {
   color: white;
-}
+}*/
 
 a {
   color: white;
+}
+
+.email {
+  font-family: "Helvetica Nueue", Helvetica, sans-serif;
+  font-weight: 100; 
+}
+
+.title {
+  font-family: "Helvetica Nueue", Helvetica, sans-serif;
+  font-size: 28px;
+  font-weight: bold;
 }

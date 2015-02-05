@@ -1,10 +1,10 @@
 <div class = 'col-xs-6 col-sm-6 col-xs-offset-1'>
-<h2>Dreamer: <%= current_user.email %></h2>
+<b>DREAMER:</b> <span class = 'email'><%= current_user.email %></span>
 
 <h1>Wish Lists</h1>
 <hr />
 <% current_user.wishes.each do |wish| %>
-	<h2><%= link_to wish.name, wish.url %></h2>
+	<p class = 'title'><%= link_to wish.name, wish.url %></p>
 	<p><%= wish.description %></p>
 	<% end %>
 </div>
