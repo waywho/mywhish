@@ -1,0 +1,2 @@
+module Dreamer::WishlistsHelper
+end

@@ -3,8 +3,8 @@
 
 <h1>Wish Lists</h1>
 <hr />
-<% current_user.wishes.each do |wish| %>
-	<p class = 'title'><%= link_to wish.name, wish.url %></p>
-	<p><%= wish.description %></p>
+<% current_user.wishlists.each do |wishlist| %>
+	<p class = 'title'><%= link_to wishlist.occasion, '#' %></p>
+	<p><%= wishlist.date %></p>
 	<% end %>
 </div>
