@@ -46,19 +46,20 @@
 
     </div><!-- /.container-fluid -->
   </nav>
-
-  <% if notice.present? %>
-  <p class = "alert alert-info"><%= notice %></p>
-  <% end %>
-  <% if alert.present? %>
-  <p class = "alert alert-danger"><%= alert %></p>
-  <% end %>
-    
   <div class = "overlay"></div>
-    <!-- Begin page content -->
-    <%= yield %>
+      <div class = 'col-xs-10 col-sm-8 col-xs-offset-1'>
+        <% if notice.present? %>
+        <p class = "alert alert-info"><%= notice %></p>
+        <% end %>
+        <% if alert.present? %>
+        <p class = "alert alert-danger"><%= alert %></p>
+        <% end %>
+      </div>
 
-</div>
+      <!-- Begin page content -->
+      <%= yield %>
+
+  </div>
 
 <br class = "clr">
 
