@@ -6,4 +6,5 @@ class User < ActiveRecord::Base
 
   has_many :wishes
   has_many :wishlists
+  has_many :listed_wishes, through: :wishlists, :source => :wish
 end

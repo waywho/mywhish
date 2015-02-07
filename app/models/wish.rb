@@ -1,4 +1,4 @@
 class Wish < ActiveRecord::Base
 	belongs_to :user
-	belongs_to :wishlist
+	has_many :wishlists
 end
